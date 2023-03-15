@@ -1,0 +1,29 @@
+<!--<th class="mat center">
+                                ID
+                            </th>-->
+                            <th class="center">
+                                Nome
+                            </th>
+                            <th class="center">
+                                Data de nascimento
+                            </th>
+                            <th class="center">
+                                Cpf
+                            </th>
+                            <th class="center">
+                                Ações
+                            </th>
+
+
+----------------------------------------------------------------------------------------
+
+<tr>
+                                <!--<td class="center">1</td>-->
+                                <td >Matheus Souza Soares</td>
+                                <td >05/05/1999</td>
+                                <td >17037997714</td>
+                                <td class="center">
+                                    <img src="img/editar.png" title="Editar" alt="">
+                                    <img src="img/deletar-lixeira.png" title="Deletar" alt="">
+                                </td>
+                            </tr>

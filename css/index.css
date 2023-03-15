@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafbfc;
+    height: 90vh;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background:#ccc;
+}
+
+::-webkit-scrollbar-thumb{
+    background: aqua;
+}
+
+.ast{
+    color: red;
+}
+
+.center{
+    text-align: center;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+header{
+    text-align: center;
+    background-color: rgb(50, 59, 141);
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+main{
+    padding: 30px 30px;
+}
+
+#title{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.lineinput {
+    display: grid;
+    margin-bottom: 10px;
+}
+
+.rbtn{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.title{
+    margin-top: 20px;
+}
+
+select{
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.space{
+    margin-left: 30px;
+}
+
+.add{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    background-color:rgb(50, 59, 141);
+    color: white; 
+    font-weight: bold;
+    transition: all ease 10ms;
+}
+
+button{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    background-color:rgb(50, 59, 141);
+    color: white; 
+    font-weight: bold;
+    transition: all ease 10ms;
+}
+
+button:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.content{
+    margin-top: 15px;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid rgb(141, 139, 139);
+    width: 100%;
+}
+
+table th{
+    background-color:rgb(50, 59, 141);
+    color: #ccc;
+    text-align: left;
+    padding: 1px 5px;
+}
+
+table tr:hover{
+    background: aqua;
+}
+
+table td{
+    text-align: left;
+    padding: 1px 5px;
+}
+
+table td img{
+    width: 22px;
+    margin-left: 5%;
+}
+
+table td img:hover{
+    cursor: pointer;
+}
+
+.mat{
+    width: 50px;
+}
+
+.menor{
+    width: 17px;
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+}
+
+.left{
+    display: flex;
+    text-align: left;
+    width: 100%;
+}
+
+.right{
+    Width: 100%;
+    display: flex,;
+    justify-content: flex-end;
+}
+
+.hr{
+    background: linear-gradient(to right, #fafbfc,rgb(31, 36, 110));
+    height: 3px;
+    margin-top: 3px;
+}
+
+button{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    background-color:rgb(50, 59, 141);
+    color: white; 
+    font-weight: bold;
+    transition: all ease 10ms;
+}
+
+button:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.menor{
+    width: 17px;
+}
+
+.mais{
+    padding: 5px 20px;
+}

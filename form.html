@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Funcionário</title>
+    <link rel="stylesheet" href="css/styleform.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <h1>Empresa Aleatoria</h1>
+    </header>
+    
+    <main>
+        <a href="index.html">
+            <button type="button"  class="mais"><!--onclick="closeWindow()"-->
+                <img src="img/back.png" class="menor" alt="">
+            </button>
+        </a>
+
+        <div id="title">
+            <h2>Cadastro de funcionários da empresa</h2>
+
+        </div>
+
+        <div class="form">
+            <form onsubmit="Salvar(event)">
+                <div class="lineinput">
+                    <label for="nome">Nome do funcionário: <span class="ast">*</span></label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome do funcionário" required>
+                </div>
+                <div class="lineinput">
+                    <label for="">Salário base: <span class="ast">*</span></label>
+                    <input type="number" name="salarioB" id="salarioB" placeholder="Salário base" required>
+                </div>
+
+                <div class="lineinput">
+                    <label for="">Função: <span class="ast">*</span></label>
+                    <input type="text" name="cargo" id="cargo" placeholder="Cargo do funcionário dentro da empresa" required>
+                </div>
+
+                <div class="lineinput">
+                    <label for="">Data de admissão: <span class="ast">*</span></label>
+                    <input type="date" name="admissao" id="admissao" placeholder="Cargo do funcionário dentro da empresa" required>
+                </div>
+
+                <div class="lineinput">
+                    <label for="">Data de nascimento: <span class="ast">*</span></label>
+                    <input type="date" name="nasc" id="nasc" placeholder="Cargo do funcionário dentro da empresa" required>
+                </div>
+
+                <div class="lineinput">
+                    <label for="">Email: <span class="ast">*</span></label>
+                    <input type="email" name="email" id="email" placeholder="funcionario@exemplo.com" required>
+                </div>
+
+                <div class="lineinput">
+                    <label for="">Telefone: <span class="ast">*</span></label>
+                    <input type="number" maxlength="11" minlength="11" name="number" id="number" placeholder="21912345678" required>
+                </div>
+
+                <div class="lineinput">
+                    <label for="">CPF: <span class="ast">*</span></label>
+                    <input type="number" maxlength="11" minlength="11" name="cpf" id="cpf" placeholder="Somente números" required>
+                </div>
+
+                <p class="title"> Funcionário recebe algum adicional de insalubridade ou periculosidade?<span class="ast"> *</span> </p>
+
+                <p><label for="insa"><input type="radio" name="adicional" value="Insalubridade" class="rbtn" id="insa" onclick="unlock()"> Insalubridade </label></p>
+
+                <p><label for="peri"><input type="radio" name="adicional" value="Periculosidade" class="rbtn" id="peri" onclick="unlock()"> Periculosidade</p></label>
+
+                <p><label for="nenh"><input type="radio" name="adicional" value="Nenhum" class="rbtn" id="nenh"  onclick="disable_select()" checked> Nenhum</p></label>
+
+                <select name="grau" id="grau" class="rbtn" disabled>
+                    <option value="Mínimo" class="rbtn">Minimo</option>
+                    <option value="Médio" class="rbtn">Médio</option>
+                    <option value="Máximo" class="rbtn">Máximo</option>
+                </select>
+
+                <p class="title"> 
+                    Benefício: <strong>[<span id="nCota">0</span>]</strong>
+                </p>
+                <p><label for="Salario Familia"><input type="radio" name="Beneficio" value="Salario Familia" class="rbtn" id="Salario Familia" onclick="addTable()"> Salário Família</label></p>
+
+                <p><label for="Dependente IRRF"><input type="radio" name="Beneficio" value="Dependente IRRF" class="rbtn" id="Dependente IRRF" onclick="addTable()"> Dependente IRRF</p></label>
+
+                <p><label for="nenhu"><input type="radio" name="Beneficio" value="Nenhum" class="rbtn" id="nenhu"  onclick="delTable()" checked> Nenhum</p></label>
+                <div id="tabela" class="content ">
+                    
+                </div>
+                <p class="title">
+                    <span> Vale transporte <span class="ast"> *</span></span>
+                </p>
+                <label for="s"><input type="radio" name="vt" value="Sim" class="rbtn" id="s"> Sim </label>
+
+                <label for="n"><input type="radio" name="vt" value="Não" class="rbtn" id="n" checked> Não </label>
+
+                <p class="title">
+                    <button type="submit">Salvar</button>
+                    <button type="reset" onclick="Reset()" class="space">Limpar</button>
+                </p>
+                
+            </form>
+        </div>
+
+        
+
+    </main>
+    
+    <script src="js/form.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+</html>

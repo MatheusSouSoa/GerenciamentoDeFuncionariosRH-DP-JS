@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contracheque.css">
+    <title>Contracheque</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" defer></script>
+    
+</head>
+<body>
+    <!-- perguntar se fez hora extra, 50 ou 100%. se deseja calcular IRRF, horas extras feitas -->
+    <header>
+        <h1>
+            Empresa Aleatoria
+        </h1>
+    </header>
+    
+    <main id="start">
+        
+        <div class="menu">
+            <a href="index.html">
+                <button type="button"  class="mais"><!--onclick="closeWindow()"-->
+                    <img src="img/back.png" class="menor" alt="">
+                </button>
+            </a>
+            <!--onclick="closeWindow()"-->
+            <class class="left">
+                <div class="left acoes">
+                    <img class="imgclick" src="img/pdf.png" alt="">
+                            <img class="imgclick" onclick="teste()" src="img/imprimir.png" alt="">
+                            <img class="imgclick" src="img/mandar.png" alt="">
+                </div>
+            </class>
+            <div>
+            </div>
+            <div class="right text-right">
+                <h2>Contracheque</h2>
+    
+            </div>
+        </div>
+        <div class="hr">
+
+        </div>
+        <div id="hExtra" class="desce lineinput form">
+            Horas extras: 
+            <input type="number" id="diasUteis" name="diasUteis" placeholder="Dias utéis">
+            <input type="number" id="fdsFeriados" name="fdsFeriados" placeholder="Fim de semana/Feriados">
+            <button class="green" type="button">
+                Salvar
+            </button>
+            <button class="red" type="button">
+                Cancelar
+            </button>
+        </div>
+        
+
+        <div class="content">
+            <div class="one">
+                <div class="left top">
+                    <p >Empresa Aleatoria</p>
+                    <p class="top">
+                        Endereço: Rua Lorem ipsum dolor 
+                    </p>
+                    <p class="top">
+                        CNPJ:04.290.167/0001-95
+                    </p>
+                </div>
+                <div class="right">
+                    <p class="top">
+                        <strong>Recibo de Pagamento de Salário</strong>
+                    </p>
+                    <p>
+                        Mês Referência: Agosto/2022
+                    </p>
+                </div>
+            </div>
+            <div class="one">
+                <table id="no-border">
+                    <thead>
+                        <th>
+                            Código
+                        </th>
+                        <th>
+                            Funcionário
+                        </th>
+                        <th>
+                            Admissão
+                        </th>
+                        <th>
+                            Função
+                        </th>
+                    </thead>
+                    <tbody>
+                        <td>cod func</td>
+                        <td>Nome func</td>
+                        <td>dt Admissão</td>
+                        <td>função</td>
+                    </tbody>
+
+                </table>
+            </div>
+            <div class="one" id="mid">
+                <table id="border" border="1">
+                    <thead>
+                        <th>
+                            Descrição
+                        </th>
+                        <th>
+                            Referência
+                        </th>
+                        <th>
+                            Vencimentos
+                        </th>
+                        <th>
+                            Descontos
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nome func</td>
+                            <td>Referência</td>
+                            <td>dt Admissão</td>
+                            <td>função</td>
+                        </tr>
+                        <tr>
+                            <td>Nome func</td>
+                            <td>Referência</td>
+                            <td>dt Admissão</td>
+                            <td>função</td>
+                        </tr>
+                        <tr>
+                            <td>Nome func</td>
+                            <td>Referência</td>
+                            <td>dt Admissão</td>
+                            <td>função</td>
+                        </tr>
+                        
+                    </tbody>
+
+                </table>
+            </div>
+            <div class="one">
+                <div class="left top">
+
+                </div>
+                <div class="right bord flex">
+                    <div class="left">
+                        <p >
+                            Total Vencimentos
+                        </p>
+                    </div>
+                    <div class="bord right">
+                        <p >
+                            Total Descontos
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="one">
+                <div class="left top">
+
+                </div>
+                <div class="right bord flex">
+                    <div class="left">
+                        <p >
+                            660.93
+                        </p>
+                    </div>
+                    <div class="bord right">
+                        <p >
+                            247.98
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="one">
+                <div class="left top">
+
+                </div>
+                <div class="right bord flex">
+                    <div class="left">
+                        <p>
+                            <strong>
+                                Valor Líquido R$
+                            </strong> 
+                        </p>
+                    </div>
+                    <div class="bord right">
+                        <p >
+                            <strong>
+                                413,45
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="one">
+                <table id="borderr" >
+                    <thead>
+                        <th>
+                            Salário Base
+                        </th>
+                        <th>
+                            Base FGTS
+                        </th>
+                        <th>
+                            FGTS do mês
+                        </th>
+                        <th>
+                            Base Calc. IRPF
+                        </th>
+                    </thead>
+                    <tbody>
+                        <td>cod func</td>
+                        <td>Nome func</td>
+                        <td>dt Admissão</td>
+                        <td>função</td>
+                    </tbody>
+
+                </table>
+            </div>
+            
+           
+        </div>
+        
+    </main>
+
+    <script src="js/contracheque.js"></script>
+</body>
+</html>
