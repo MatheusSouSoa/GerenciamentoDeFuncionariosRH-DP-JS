@@ -250,4 +250,20 @@ img{
     margin-left: 10px;
 }
 
+@media (max-width: 510px){
 
+    .content {
+        width: 510px;
+        margin-right: 10px;
+    }
+    header {
+        width: 530px;
+    }
+    .menu {
+        width: 510px;
+    }
+
+    .hr{
+        width: 510px;
+    }
+}
